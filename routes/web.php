@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::any('/index', 'Index@index');
+Route::any('/show', 'Index@show');
