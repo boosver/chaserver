@@ -15,5 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::any('/index', 'Index@index');
+Route::any('/index', 'Index@index')->middleware("wx.auth");
 Route::any('/show', 'Index@show');
