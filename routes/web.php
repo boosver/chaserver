@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::any('/index', 'Index@index')->middleware("wx.auth");
 Route::any('/show', 'Index@show');
+Route::any('/wechat', 'Index@wechat');
